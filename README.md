@@ -1,55 +1,51 @@
 # CorpoTool Mobile
 
-CorpoTool Mobile es la aplicación móvil de **CorpoTool**, diseñada para asistir a profesionales de ginecología y colposcopia en:
+Aplicación móvil desarrollada con **React Native (Expo)** para el registro clínico y análisis automatizado de lesiones cervicales mediante inteligencia artificial. CorpoTool Mobile está orientada a apoyar a médicos ginecólogos y especialistas en colposcopia, permitiendo:
 
-- Registro de datos clínicos de pacientes.
-- Captura de imágenes simulando un colposcopio.
-- Clasificación automática de lesiones cervicales mediante inteligencia artificial.
-- Evaluación de la escala SWDE.
-- Generación de reportes clínicos en PDF.
-
-Este proyecto utiliza **React Native** con **Expo** y está estructurado para un desarrollo rápido y modular.
-
----
-
-## Tabla de contenidos
-
-1. [Características](#características)  
-2. [Requisitos](#requisitos)  
-3. [Instalación](#instalación)  
-4. [Estructura del proyecto](#estructura-del-proyecto)  
-5. [Uso](#uso)  
-6. [Flujo de autenticación](#flujo-de-autenticación)  
-7. [Dependencias principales](#dependencias-principales)  
-8. [Contribuciones](#contribuciones)  
-9. [Licencia](#licencia)  
+- Registrar pacientes y su información clínica.
+- Capturar imágenes desde el dispositivo móvil simulando un colposcopio.
+- Analizar automáticamente las imágenes usando IA.
+- Calcular la escala SWDE.
+- Generar reportes clínicos en PDF.
+- Evaluar factores de riesgo por IA con base en estilo de vida y antecedentes.
 
 ---
 
-## Características
+## 📦 Tecnologías utilizadas
 
-- **Autenticación** con Firebase (email/contraseña).  
-- **Dashboard** con resumen de pacientes y exámenes.  
-- **Gestión de pacientes** (listar, registrar, ver perfil).  
-- **Registro de exámenes** con captura de imagen y análisis IA.  
-- **Cálculo de escala SWDE** y predicción de riesgo.  
-- **Factores de riesgo** basados en datos clínicos y estilo de vida.  
-- **Generación y vista previa de reportes PDF** para compartir o descargar.
-
----
-
-## Requisitos
-
-- Node.js ≥ 16.x  
-- npm ≥ 8.x o Yarn ≥ 1.22  
-- Expo CLI ≥ 6.x  
-- Git ≥ 2.30  
+- **React Native + Expo**
+- **Firebase Auth (email/contraseña)**
+- **React Navigation**
+- **AsyncStorage**
+- **TypeScript**
+- **PostgreSQL (en backend futuro)**
+- **IA local o conectada (próximamente con TFLite/PyTorch Mobile)**
 
 ---
 
-## Instalación
+## 🚀 Instalación y ejecución
 
-1. Clonar el repositorio:
-   ```bash
+### Requisitos previos
+
+- Node.js ≥ 16.x
+- Yarn ≥ 1.22 (o npm ≥ 8.x)
+- Expo CLI ≥ 6.x
+- Git
+
+### Pasos
+
+```bash
+# Clona el repositorio
+git clone https://github.com/TU_USUARIO/corpotool-mobile.git
+cd corpotool-mobile
+
+# Instala dependencias
+yarn install
+# o
+npm install
+
+# Inicia el proyecto con Expo
+expo start
+
    git clone git@github.com:TU_USUARIO/corpotool-mobile.git
    cd corpotool-mobile
